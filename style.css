@@ -1,0 +1,131 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    }
+body {
+    background-color: #87CEEB;
+  }
+  
+  header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1{
+    font-family: 'Agbalumo', sans-serif;
+  }
+  p {
+    text-align: center; 
+    font-family: Arial, sans-serif; 
+    font-size: 18px; 
+    margin: 0; 
+  padding: 20px;
+  }
+  .logo {
+    display: flex;
+    align-items: center; 
+  }
+
+.logo img {
+    width: 100px; 
+    height: auto; 
+    margin-right: 20px; 
+  }
+
+  
+  .imagenChicas {
+    width: 495px;
+    height: 375px;
+  }
+  .custom-button {
+    background-color: pink; 
+    color: black; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; 
+    text-decoration: none;
+}
+  
+  .custom-button:hover {
+    background-color: purple; 
+  }
+  .custom-button a {
+    text-decoration: none; 
+    color: black;
+  }
+  
+  .gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .gallery {
+    display: none;
+}
+  
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vw;
+  }
+  
+  .image-container img {
+    max-height: 25vw;
+    cursor: pointer;
+    transition: box-shadow .3s, transform .3s ease-out;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px 5px rgba(0, 0, 0, .08);
+  }
+  
+  .image-container img.grande {
+    position: fixed;
+    margin: 0;
+    z-index: 9;
+    max-width: 90vw;
+    animation: alcentro .4s ease-out;
+    animation-fill-mode: forwards;
+    cursor: default;
+  }
+  
+  .placeholder {
+    display: none;
+    margin: 1vw;
+  }
+  
+  .placeholder.activ {
+    display: block;
+    background: rgba(0, 0, 0, .15);
+  }
+  
+  span{
+    margin: 5px;
+  }
+  footer {
+    text-align: center; 
+  }
+  
+  footer h3 {
+    display: inline-block; 
+  }
+  
+  @media (max-width: 767px) {
+    body {
+      background-color: #b6ffff; 
+    }
+  
+    .image-container img {
+      max-height: 12.5vw; 
+      border-radius: 50%; 
+    }
+  }
